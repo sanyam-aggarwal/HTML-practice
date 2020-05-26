@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    progress<input id="d" type="text">
+    <button class="btn btn-primary"> add progress</button><br><br>
+    <div class="progress">
+    <div id="f" class="progress-bar progress-bar-animated progress-bar-striped" ></div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var a=$("#d").val();
+                $("#f").css("width",a);
+                alert(a);
+            })
+        })
+    </script>
+    </body>
+</html>
